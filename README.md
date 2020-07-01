@@ -34,9 +34,7 @@ THEN I am presented with the last searched city forecast
 
 The following image demonstrates the application functionality:
 
-![weather dashboard demo](./Assets/06-server-side-apis-homework-demo.png)
-
-Please check the updated image above for functionality 
+Please check the image in files for app functionality
 
 1. Created a base of html with bootstrap components
 2. Created weather.js for javascript
