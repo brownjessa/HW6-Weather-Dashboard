@@ -41,4 +41,10 @@ $(document).ready(function () {
           }
         });
       }
-            
+
+      function getForecast(searchValue) {
+        $.ajax({
+          type: "GET",
+          url: "http://api.openweathermap.org/data/2.5/forecast?q=" + searchValue + "&appid=01355dfb66b836e497ff5fde3d07af2e&units=imperial",
+          dataType: "json",
+          success: function(data) {
