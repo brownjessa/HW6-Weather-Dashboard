@@ -31,8 +31,14 @@ $(document).ready(function () {
             var temp = $("<p>").addClass("card-text").text("Temperature: " + data.main.temp + " °F");
             var cardBody = $("<div>").addClass("card-body");
             var img = $("<img>").attr("src", "http://openweathermap.org/img/w/" + data.weather[0].icon + ".png");
-            
+
             title.append(img);
             cardBody.append(title, temp, humid, wind);
             card.append(cardBody);
-            $("#today").append(card);    
+            $("#today").append(card);
+            getForecast(searchValue);
+            getUVIndex(data.coord.lat, data.coord.lon);
+          }
+        });
+      }
+            
