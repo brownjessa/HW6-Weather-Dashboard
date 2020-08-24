@@ -1,5 +1,10 @@
 # HW6-Weather-Dashboard
 
+Resources
+https://www.youtube.com/watch?v=KT6Jaxl0JM4
+
+https://www.spatialtimes.com/2019/01/Create-a-JavaScript-Weather-App-with-Location-Data-Part-1/
+
 # 06 Server-Side APIs: Weather Dashboard
 
 Developers are often tasked with retrieving data from another application's API and using it in the context of their own. Third-party APIs allow developers to access their data and functionality by making requests with specific parameters to a URL. Your challenge is to build a weather dashboard that will run in the browser and feature dynamically updated HTML and CSS.
@@ -40,4 +45,4 @@ Please check the image in files for app functionality
 2. Created weather.js for javascript
 3. Linked bootstrap, js, jsquery.
 4. Created appropriate java functions to pull API's and append information to the page.
-5. Link images to append to page with results. 
+5. Link images to append to page with results.
