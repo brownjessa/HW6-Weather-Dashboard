@@ -5,6 +5,10 @@ https://www.youtube.com/watch?v=KT6Jaxl0JM4
 
 https://www.spatialtimes.com/2019/01/Create-a-JavaScript-Weather-App-with-Location-Data-Part-1/
 
+#Demo
+
+file: ![](WeatherDashboardDEMO.gif)
+
 # 06 Server-Side APIs: Weather Dashboard
 
 Developers are often tasked with retrieving data from another application's API and using it in the context of their own. Third-party APIs allow developers to access their data and functionality by making requests with specific parameters to a URL. Your challenge is to build a weather dashboard that will run in the browser and feature dynamically updated HTML and CSS.
