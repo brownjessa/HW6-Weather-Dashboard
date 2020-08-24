@@ -22,4 +22,12 @@ $(document).ready(function () {
               window.localStorage.setItem("history", JSON.stringify(history));
               makeRow(searchValue);
             }
-            $("#today").empty();            
+            $("#today").empty();
+ 
+            var title = $("<h3>").addClass("card-title").text(data.name + " (" + new Date().toLocaleDateString() + ")");
+            var card = $("<div>").addClass("card");
+            var wind = $("<p>").addClass("card-text").text("Wind Speed: " + data.wind.speed + " MPH");
+            var humid = $("<p>").addClass("card-text").text("Humidity: " + data.main.humidity + "%");
+            var temp = $("<p>").addClass("card-text").text("Temperature: " + data.main.temp + " °F");
+            var cardBody = $("<div>").addClass("card-body");
+            var img = $("<img>").attr("src", "http://openweathermap.org/img/w/" + data.weather[0].icon + ".png");
