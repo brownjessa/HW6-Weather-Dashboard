@@ -58,3 +58,11 @@ $(document).ready(function () {
                 var img = $("<img>").attr("src", "http://openweathermap.org/img/w/" + data.list[i].weather[0].icon + ".png");
                 var p1 = $("<p>").addClass("card-text").text("Temp: " + data.list[i].main.temp_max + " °F");
                 var p2 = $("<p>").addClass("card-text").text("Humidity: " + data.list[i].main.humidity + "%");
+                col.append(card.append(body.append(title, img, p1, p2)));
+                $("#forecast .row").append(col);
+              }
+            }
+          }
+        });
+      }
+    
