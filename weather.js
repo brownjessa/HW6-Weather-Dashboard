@@ -4,3 +4,10 @@ $(document).ready(function () {
         $("#search-value").val("");  
         searchWeather(searchValue);
       }); 
+      $(".history").on("click", "li", function() {
+        searchWeather($(this).text());
+      });
+      function makeRow(text) {
+        var li = $("<li>").addClass("list-group-item list-group-item-action").text(text);
+        $(".history").append(li);
+      }
