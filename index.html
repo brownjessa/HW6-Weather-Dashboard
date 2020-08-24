@@ -23,43 +23,24 @@
     <header class="container-fluid text-center text-white bg-dark p-2">
       <h1>Weather Dashboard</h1>
     </header>
+
     <div class="container-fluid">
-      <h2>Search For A City</h2>
       <div class="row">
-        <div class="col-4">
-          <input id="userinput" />
-          <button id="searchbutton">Search</button>
-          <div id="displaycities"></div>
-          <img id="" src="" alt="" />
-        </div>
-        <div class="col-8">
-          <h3 id="currentcity"></h3>
-          <h4 id="currentdate"></h4>
-          <h5 id="moment"></h5>
-          <div id="currenttemp">Current Temperature</div>
-          <div id="displaytemp"></div>
-
-          <div>
-            Current Humidity
-            <div id="displayhumidity"></div>
-
-            <div>
-              Wind speed
-              <div id="displaywindspeed"></div>
-              <div>
-                UV Index
-                <div id="displayuvindex"></div>
-              </div>
-
-              <div class="row">
-                <div class="col-12">
-                  <h2>5 Day Forecast</h2>
-                </div>
-
-                <div class="row" id="displayforecast"></div>
-              </div>
-            </div>
+        <aside class="col-lg-3 bg-light">
+          <h5 class="mt-1">Search for a City:</h5>
+          <div class="form-inline form-group">
+            <input class="form-control" type="text" id="search-value" />
+            <button class="btn btn-primary" id="search-button">
+              <i class="fa fa-search"></i>
+            </button>
           </div>
+
+          <ul class="list-group history"></ul>
+        </aside>
+
+        <div class="col-lg-9">
+          <div id="today" class="mt-3"></div>
+          <div id="forecast" class="mt-3"></div>
         </div>
       </div>
     </div>
