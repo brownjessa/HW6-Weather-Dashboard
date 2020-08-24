@@ -17,10 +17,9 @@ $(document).ready(function () {
           url: "http://api.openweathermap.org/data/2.5/weather?q=" + searchValue + "&appid=01355dfb66b836e497ff5fde3d07af2e&units=imperial",
           dataType: "json",
           success: function(data) {
-            // create history link for this search
             if (history.indexOf(searchValue) === -1) {
               history.push(searchValue);
               window.localStorage.setItem("history", JSON.stringify(history));
-        
               makeRow(searchValue);
             }
+            $("#today").empty();            
